@@ -61,11 +61,6 @@ body.stopScrolling{
   
 } */
 
-::selection {
-  background-color: hsla(var(--hue-1), 100%, 60%, 0.9);
-  color: #fff;
-}
-
 a {
   text-decoration: none;
 }
