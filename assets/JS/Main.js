@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-const prt_section = document.querySelector(".portfolio");
+const prt_section = document.querySelector(".ANIMEE");
 const zoom_icon = document.querySelectorAll(".zoom-icon");
 const modal_overlay = document.querySelector(".modal-overlay");
 const images = document.querySelectorAll(".images img");
@@ -11,7 +11,7 @@ function stickyNavbar(){
 stickyNavbar();
 window.addEventListener("scroll", stickyNavbar);
 
-let mixer = mixitup(".portfolio-gallery");
+let mixer = mixitup(".ANIMEE-gallery");
 
 let currentIndex = 0;
 zoom_icon.forEach((icn, i) => 
@@ -32,6 +32,9 @@ function changeImage(index) {
     images.forEach((img) => img.classList.remove("showImage"));
     images[index].classList.add("showImage");
 }
+
+
+
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
